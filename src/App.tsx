@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Stack, Paper } from '@mui/material';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Stack
+      justifyContent="center"
+      alignItems="center"
+      minHeight="100vh"
+      sx={{
+        background:
+          'linear-gradient(rgb(255, 111, 96) 0%, rgb(255, 111, 96) 13%, white 13%, white 100%)',
+      }}
+    >
+      <Paper
+        elevation={2}
+        sx={{
+          width: '58vw',
+          height: '86vh',
+          overflow: 'hidden',
+          borderRadius: '9px',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        <Outlet />
+      </Paper>
+    </Stack>
   );
 }
 
