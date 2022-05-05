@@ -35,7 +35,7 @@ function YearSelect() {
       variant="standard"
       MenuProps={{ PaperProps: { sx: { maxHeight: 200 } } }}
       sx={{
-        fontSize: '1.35rem',
+        fontSize: '1.3rem',
       }}
     >
       {genYears().map((val) => (
