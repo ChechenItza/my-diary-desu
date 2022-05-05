@@ -13,7 +13,7 @@ function HeaderContainer({ children }: Props) {
         gridTemplateColumns: '1fr auto 1fr',
         backgroundColor: 'primary.main',
         padding: '1rem',
-        height: '4.8rem',
+        height: '5rem',
       }}
     >
       {children}

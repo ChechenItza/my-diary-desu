@@ -14,7 +14,7 @@ const DateSelect = styled(Select)(({ theme }) => ({
     fill: theme.palette.primary.contrastText,
   },
   color: theme.palette.primary.contrastText,
-  fontSize: '1.5rem',
+  fontSize: '1.6rem',
   fontWeight: 'bold',
 }));
 

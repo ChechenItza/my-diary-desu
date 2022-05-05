@@ -26,10 +26,7 @@ root.render(
             <Route path="/entry/:date" element={<EntryDateValidator />} />
             <Route path=":date" element={<CalendarDateValidator />} />
           </Route>
-          <Route
-            path="*"
-            element={<Navigate to={toCalendarLink(new Date())} />}
-          />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

@@ -22,7 +22,7 @@ function MonthSelect() {
       variant="standard"
       MenuProps={{ PaperProps: { sx: { maxHeight: 200 } } }}
       sx={{
-        marginRight: '1rem',
+        marginRight: '0.5rem',
       }}
     >
       <MenuItem value={0}>January</MenuItem>
